@@ -1,0 +1,25 @@
+{
+  "name": "task-dashboard-backend",
+  "version": "1.0.0",
+  "description": "Login + dashboard + read-only tasks API, using Prisma ORM",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "postinstall": "prisma generate",
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "create-admin": "node setup-admin.js",
+    "db:push": "prisma db push",
+    "db:studio": "prisma studio"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "cors": "^2.8.5",
+    "bcryptjs": "^2.4.3",
+    "@prisma/client": "^5.20.0"
+  },
+  "devDependencies": {
+    "prisma": "^5.20.0"
+  }
+}
