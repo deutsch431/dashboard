@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tasks</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="topbar">
+    <nav>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="tasks.html" class="active">Tasks</a>
+    </nav>
+    <div class="topbar-right">
+      <span id="current-username"></span>
+      <button id="logout-btn">Log out</button>
+    </div>
+  </div>
+
+  <main>
+    <h1>Tasks</h1>
+
+    <div class="filters" id="filters">
+      <button data-status="" class="active">All</button>
+      <button data-status="success">Success</button>
+      <button data-status="failed">Failed</button>
+      <button data-status="pending">Pending</button>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Title</th>
+          <th>Status</th>
+          <th>Detail</th>
+          <th>Updated</th>
+        </tr>
+      </thead>
+      <tbody id="task-rows"></tbody>
+    </table>
+    <div class="empty-state" id="empty-state" style="display:none;">No tasks match this filter.</div>
+  </main>
+
+  <script src="js/common.js"></script>
+  <script src="js/tasks.js"></script>
+</body>
+</html>

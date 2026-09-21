@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="topbar">
+    <nav>
+      <a href="dashboard.html" class="active">Dashboard</a>
+      <a href="tasks.html">Tasks</a>
+    </nav>
+    <div class="topbar-right">
+      <span id="current-username"></span>
+      <button id="logout-btn">Log out</button>
+    </div>
+  </div>
+
+  <main>
+    <h1>Process overview</h1>
+    <div class="cards">
+      <div class="card total">
+        <div class="label">Total</div>
+        <div class="value" id="count-total">–</div>
+      </div>
+      <div class="card success">
+        <div class="label">Success</div>
+        <div class="value" id="count-success">–</div>
+      </div>
+      <div class="card failed">
+        <div class="label">Failed</div>
+        <div class="value" id="count-failed">–</div>
+      </div>
+      <div class="card pending">
+        <div class="label">Pending</div>
+        <div class="value" id="count-pending">–</div>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/common.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
